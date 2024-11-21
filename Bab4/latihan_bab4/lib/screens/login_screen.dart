@@ -21,7 +21,7 @@ class LoginScreen extends StatelessWidget {
                 "Again!",
                 style: TextStyle(
                   fontSize: 48,
-                  color: Color(0xFF1877F2),
+                  color: Color.fromARGB(247, 1, 55, 126),
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -80,7 +80,7 @@ class LoginScreen extends StatelessWidget {
               Center(
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color(0xFF1877F2),
+                    backgroundColor: Color.fromARGB(255, 5, 68, 150),
                   padding: 
                   EdgeInsets.symmetric(horizontal: 140, vertical: 14),
                 shape: RoundedRectangleBorder(

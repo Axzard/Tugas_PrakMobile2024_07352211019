@@ -169,8 +169,9 @@ Future<List<Map<String, String>>> fetchNews() async {
       body: IndexedStack(
         index: _currentIndex,
         children: [
-          ... pages,
-          EditProfileScreen(),
+          pages [0],
+          pages [1],
+          Center(child: Text('Halaman Bookmark')),
           EditProfileScreen(),
         ],
       ),
