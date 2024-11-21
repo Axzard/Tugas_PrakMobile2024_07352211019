@@ -22,7 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              'assets/images/logo hmti.jpg',
+              'assets/images/logohmti.png',
               height: 120,
             ),
             SizedBox(height: 20),
