@@ -9,26 +9,25 @@ class _Bab4State extends State<Bab4> {
   // Daftar item di keranjang
   List<CartItem> cartItems = [
     CartItem(
-        gambar: "assets/images/sepatu1.png",
-        judul: "sepatu1",
-        deskripsi: "sepatu",
+        gambar: "assets/images/Mi goreng.png",
+        judul: "indomie",
+        deskripsi: "indomie",
         harga: 4,
         jumlah: 0),
     CartItem(
-        gambar: "assets/images/sepatu2.png",
-        judul: "sepatu2",
-        deskripsi: "sepatu",
+        gambar: "assets/images/Mi hype abis.png",
+        judul: "indomie kriting",
+        deskripsi: "indomie kriting",
         harga: 4,
         jumlah: 0),
     CartItem(
-        gambar: "assets/images/sepatu3.png",
-        judul: "sepatu3",
-        deskripsi: "sepatu",
+        gambar: "assets/images/Mi goreng ayam geprek.png",
+        judul: "Mi goreng ayam geprek",
+        deskripsi: "Mi goreng ayam geprek",
         harga: 4,
         jumlah: 0),
   ];
 
-  // Menghitung subtotal dari harga dan jumlah item
   double getSubtotal() {
     double subtotal = 0;
     for (var item in cartItems) {
@@ -37,18 +36,18 @@ class _Bab4State extends State<Bab4> {
     return subtotal;
   }
 
-  // Menghitung diskon 4%
+
   double getDiscount() {
     double subtotal = getSubtotal();
-    return subtotal * 0.04; // 4% dari subtotal
+    return subtotal * 0.04; 
   }
 
-  // Menghitung total setelah diskon dan biaya pengiriman
+
   double getTotal() {
-    return getSubtotal() - getDiscount() + 0; // Menambahkan biaya pengiriman
+    return getSubtotal() - getDiscount() + 0; 
   }
 
-  // Fungsi untuk memperbarui jumlah item
+
   void updateItemQuantity(int index, int quantity) {
     setState(() {
       if (quantity > 0) {
@@ -57,7 +56,6 @@ class _Bab4State extends State<Bab4> {
     });
   }
 
-  // Fungsi untuk menghapus item
   void removeItem(int index) {
     setState(() {
       cartItems.removeAt(index);

@@ -10,6 +10,7 @@ class ECommerceApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'E-Commerce',
       theme: ThemeData(
         primarySwatch: Colors.blue,

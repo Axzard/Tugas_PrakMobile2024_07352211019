@@ -67,16 +67,6 @@ flutter:
   - assets/images/indomie.jpg
   - assets/images/indomi kuah.jpeg
   - assets/images/indomie kriting.jpg
-  - assets/images/p1.png
-  - assets/images/p2.png
-  - assets/images/profil1.png
-  - assets/images/sepatu1.png
-  - assets/images/sepatu2.png
-  - assets/images/sepatu3.png
-  - assets/images/toko1.png
-  - assets/images/toko2.png
-  - assets/images/toko3.png
-  - assets/images/toko4.png
   
 
   # An image asset can refer to one or more resolution-specific "variants", see

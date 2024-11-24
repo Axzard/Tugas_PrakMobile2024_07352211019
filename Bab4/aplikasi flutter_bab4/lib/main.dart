@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application/screens/bab4.dart';
 
 void main() {
   runApp(const ECommerceApp());
@@ -10,6 +11,7 @@ class ECommerceApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'E-Commerce',
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -43,7 +45,13 @@ class HomeScreen extends StatelessWidget {
           const Icon(Icons.notifications, size: 24),
           const SizedBox(width: 16),
           IconButton(
-            icon: const Icon(Icons.shopping_cart, size: 24), onPressed: () {},
+            icon: const Icon(Icons.shopping_cart, size: 24), 
+            onPressed: () {
+              Navigator.push(
+                context, 
+                MaterialPageRoute(builder: (context) => Bab4()),
+              );
+            },
           ),
           const SizedBox(width: 16),
         ],
